@@ -2,14 +2,12 @@ require 'open-uri'
 require 'json'
 
 class GamesController < ApplicationController
-  Rails.application.config.session_store :cookie_store, key: '_your_app_session'
-
   def new
     @letters = Array.new(10) { ('A'..'Z').to_a.sample }
   end
 
   def score
-    raise
+    # raise
     if params[:word].chars.all? { |letter| params[:letters].include?(letter.upcase) }
       if english_word?(params[:word])
         @responce = "Congratulation! #{params[:word].capitalize} is valid eanglish word"
@@ -28,4 +26,8 @@ class GamesController < ApplicationController
     json = JSON.parse(response.read)
     json['found']
   end
+
+  # def newgame
+  #   session[:score] = 0
+  # end
 end

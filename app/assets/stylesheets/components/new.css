@@ -1,0 +1,24 @@
+#box {
+  height: 900px;
+  background-image: url("https://schoolsweek.co.uk/wp-content/uploads/2019/05/Vocabluary-words-language-feat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#answer {
+  position: absolute;
+  bottom: 10px;
+  padding-left: 15%;
+}
+h1, h2 {
+  text-shadow: 1px 1px 4px black;
+}
+#letters {
+  padding-left: 30%;
+}
+/* #img {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+} */
