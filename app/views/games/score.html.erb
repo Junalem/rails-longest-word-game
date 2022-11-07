@@ -1,4 +1,7 @@
-<div class="container mt-5 p-5 bg-warning bg-gradient shadow rounded text-center" style="width: 32rem;"><p> Your word: <%= params[:word] %></p></div>
+<div class="container mt-5 p-5 bg-warning bg-gradient shadow rounded text-center" style="width: 32rem;">
+  <p> Your word: <%= params[:word] %></p>
+  <p> Your score: <%= session[:score] %></p>
+</div>
 
 <div class="container text-center shadow-sm rounded py-5 mt-5" style="width: 32rem;"><p> <%= @responce %> </p></div>
 <div class="container mt-5 text-center" style="width: 12rem;">
